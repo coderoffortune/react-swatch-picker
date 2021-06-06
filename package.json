@@ -1,42 +1,8 @@
 {
-    "name": "react-swatch-picker",
-    "version": "1.0.6",
-    "license": "MIT",
-    "private": false,
-    "description": "React clone of Polymer swatch picker",
-    "main": "dist/SwatchPicker.js",
-    "author": {
-        "name": "Alessandro Garzaro",
-        "email": "garzaro.alessandro@gmail.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/coderoffortune/react-swatch-picker.git"
-    },
-    "peerDependencies": {
-        "react": "16.6.3",
-        "react-dom": "16.6.3",
-        "material-ui": "1.0.0-beta.17",
-        "material-ui-icons": "1.0.0-beta.36"
-    },
-    "dependencies": {
-        "react": "16.6.3",
-        "react-dom": "16.6.3"
-    },
-    "scripts": {
-        "transpile": "babel src -d dist --copy-files",
-        "prepublishOnly": "npm run transpile"
-    },
-    "devDependencies": {
-        "babel-cli": "^6.26.0",
-        "babel-core": "6.26.3",
-        "babel-loader": "7.1.4",
-        "babel-preset-env": "1.7.0",
-        "babel-preset-react": "6.24.1",
-        "css-loader": "2.0.0",
-        "material-ui": "1.0.0-beta.17",
-        "material-ui-icons": "1.0.0-beta.36",
-        "style-loader": "0.23.1"
-    },
-    "publishConfig": {}
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "dependencies": {}
 }

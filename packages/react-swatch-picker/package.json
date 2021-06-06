@@ -1,0 +1,59 @@
+{
+    "name": "react-swatch-picker",
+    "version": "1.0.6",
+    "license": "MIT",
+    "private": false,
+    "description": "React clone of Polymer swatch picker",
+    "main": "dist/SwatchPicker.js",
+    "author": {
+        "name": "Alessandro Garzaro",
+        "email": "garzaro.alessandro@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/coderoffortune/react-swatch-picker.git"
+    },
+    "peerDependencies": {
+        "@material-ui/core": "^4.11.4",
+        "@material-ui/icons": "^4.11.2",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "dependencies": {
+        "@material-ui/core": "4.11.4",
+        "@material-ui/icons": "4.11.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.14.3",
+        "@babel/core": "7.14.3",
+        "@babel/preset-env": "7.14.4",
+        "@babel/preset-react": "7.13.13",
+        "babel-core": "7.0.0-bridge.0",
+        "babel-jest": "27.0.2",
+        "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
+        "enzyme": "3.11.0",
+        "enzyme-adapter-react-16": "1.15.6",
+        "jest": "27.0.4",
+        "react-test-renderer": "17.0.2"
+    },
+    "scripts": {
+        "transpile": "babel src -d dist --copy-files --ignore '**/*.spec.js,**/*.stories.js'",
+        "watch": "babel src --watch -d dist --copy-files --ignore '**/*.spec.js,**/*.stories.js'",
+        "jest": "jest --coverage --verbose --color"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ],
+        "env": {
+            "test": {
+                "plugins": [
+                    "transform-es2015-modules-commonjs"
+                ]
+            }
+        }
+    }
+}
